@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Product>
+
+
+
+
+<div class="container">
+
+
+    @{
+        foreach (var item in Model)
+        {
+            <ul class="list-group list-group-horizontal">
+
+                <li class="list-group-item">@item.Id</li>
+                <li class="list-group-item">@item.Company</li>
+                <li class="list-group-item">@item.Model</li>
+                <li class="list-group-item">@item.Color</li>
+                <li class="list-group-item">@item.Number_Plate</li>
+                <li class="list-group-item" >@item.Details</li>
+                <li class="list-group-item">@item.Phone_Number</li>
+
+                <li class="list-group-item">@item.Creation_Date</li>
+            </ul>
+        }
+    }
+
+
+</div>
